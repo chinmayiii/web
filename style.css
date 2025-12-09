@@ -50,13 +50,17 @@ table td {
     box-shadow: 0 4px 16px #ffb6b9;
     border: 4px solid #ffe0ec;
     background: #fff;
-    object-fit: cover;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-}
-
-.download-btn {
+/* Resume and Bio-data Container Styling */
+.container {
+    border-radius: 18px;
+    max-width: 750px;
+    border: 2px solid #ffb6b9;
+    box-shadow: 0px 8px 32px rgba(106,17,203,0.10);
+    overflow: visible;
+    min-height: 1200px;
+    background: #fff;
+    padding: 36px 32px 48px 32px;
+    margin-top: 40px;
     background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
     color: #fff;
     border-radius: 24px;
@@ -68,6 +72,31 @@ table td {
 .download-btn:hover {
     background: #ffb6b9;
     color: #2575fc;
+/* Main Title Styling */
+h1 {
+    text-align: center;
+    font-size: 2.7rem;
+    color: #6a11cb;
+    margin-bottom: 28px;
+    letter-spacing: 2px;
+    text-shadow: 1px 2px 8px #ffe0ec;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-weight: 800;
+}
+
+/* Section Headings */
+h2 {
+    color: #2575fc;
+    font-size: 1.4rem;
+    margin-top: 32px;
+    margin-bottom: 12px;
+    border-left: 5px solid #ffb6b9;
+    padding-left: 12px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-weight: 700;
+    background: linear-gradient(90deg, #ffe0ec 60%, #fff 100%);
+    display: inline-block;
+}
     box-shadow: 0 2px 12px #ffb6b9;
 }
 nav ul li a:hover {
@@ -75,6 +104,13 @@ nav ul li a:hover {
     color: #ffd700;
 }
 
+table {
+    background: linear-gradient(90deg, #f3f3f3 60%, #ffe0ec 100%);
+    border-radius: 12px;
+    box-shadow: 0 2px 12px #ffb6b9;
+    margin: 0 auto 24px auto;
+    width: 95%;
+}
 .container {
     border-radius: 12px;
     max-width: 600px;
@@ -83,12 +119,29 @@ nav ul li a:hover {
 table {
     margin-top: 20px;
     background: #fafafa;
+table th {
+    background: #ffe0ec;
+    color: #6a11cb;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 1.08rem;
+    padding: 12px 10px;
+    border-right: 2px solid #ffb6b9;
+    width: 32%;
+}
     border-radius: 8px;
     overflow: hidden;
 }
 
 table th, table td {
     font-size: 1rem;
+table td {
+    color: #2575fc;
+    font-weight: 500;
+    background: #fff;
+    font-size: 1.08rem;
+    padding: 12px 10px;
+}
 }
 
 table th {
@@ -102,6 +155,22 @@ table th {
 table td {
     background: #fff;
     color: #222;
+/* Profile Image Styling */
+.profile-img {
+    display: block;
+    margin: 0 auto 24px auto;
+    box-shadow: 0 4px 24px #ffb6b9;
+    border: 5px solid #ffe0ec;
+    background: #fff;
+    object-fit: cover;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    transition: box-shadow 0.2s;
+}
+.profile-img:hover {
+    box-shadow: 0 8px 32px #6a11cb;
+}
 }
 
 img {
@@ -112,6 +181,51 @@ img {
     background: none;
     object-fit: cover;
     width: 150px;
+/* Download Button Styling */
+.download-btn {
+    background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+    color: #fff;
+    border-radius: 24px;
+    font-size: 1.1rem;
+    box-shadow: 0 2px 8px rgba(106,17,203,0.10);
+    letter-spacing: 1px;
+    padding: 12px 36px;
+    margin: 32px auto 0 auto;
+    display: block;
+    border: none;
+    cursor: pointer;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-weight: 700;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+.download-btn:hover {
+    background: #ffb6b9;
+    color: #2575fc;
+    box-shadow: 0 2px 12px #ffb6b9;
+}
+
+/* Resume Section List Styling */
+#resume-content ul {
+    margin: 0 0 18px 0;
+    padding-left: 24px;
+}
+#resume-content ul li {
+    margin-bottom: 10px;
+    font-size: 1.08rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Resume Links Styling */
+#resume-content a {
+    color: #2575fc;
+    text-decoration: underline;
+    word-break: break-all;
+    transition: color 0.2s;
+}
+#resume-content a:hover {
+    color: #6a11cb;
+}
     height: 150px;
     border-radius: 50%;
 }
