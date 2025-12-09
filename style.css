@@ -13,13 +13,24 @@
     margin-bottom: 0;
 }
 }
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #6a11cb;
+    margin-bottom: 18px;
+    letter-spacing: 2px;
+    text-shadow: 1px 2px 8px #ffe0ec;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #f3f3f3;
     min-height: 100vh;
+    background: linear-gradient(135deg, #6a82fb 0%, #fc5c7d 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-/* Colorful and modern enhancements */
 h1 {
     text-align: center;
     font-size: 2.5rem;
