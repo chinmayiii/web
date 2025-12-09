@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Bio-data</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 </head>
 <body>
 
@@ -17,25 +18,40 @@
 
 <div class="container">
     <h1>Bio-data</h1>
-    <img src="profile.jpg" alt="Chinmayi B" style="width:150px;height:150px;border-radius:50%;margin-bottom:20px;">
-    <table>
-        <tr><th>Name</th><td>Chinmayi B</td></tr>
-        <tr><th>Date of Birth</th><td>12/11/2005</td></tr>
-        <tr><th>Gender</th><td>Female</td></tr>
-        <tr><th>Religion</th><td>Hindu</td></tr>
-        <tr><th>Nationality</th><td>Indian</td></tr>
-        <tr><th>Blood Group</th><td>B+</td></tr>
-        <tr><th>Mother Tongue</th><td>Konkani</td></tr>
-        <tr><th>Languages Known</th><td>Konkani, English, Hindi</td></tr>
-        <tr><th>Contact Info</th><td>
-            <strong>Permanent Address:</strong> Ambatedka House, Sullia, DK, Karnataka<br>
-            <strong>Current Address:</strong> Bangalore<br>
-            <strong>Phone:</strong> 9482570226<br>
-            <strong>Email:</strong> chinmayibellippadi@gmail.com
-        </td></tr>
-        <tr><th>Hobbies & Interests</th><td>Dancing, Singing, Painting, Drawing, Networking, Coding</td></tr>
-    </table>
-    <a href="biodata.html" download class="download-btn">Download Bio-data</a>
+    <div id="bio-data-content">
+        <img src="profile.jpg" alt="Chinmayi B" style="width:150px;height:150px;border-radius:50%;margin-bottom:20px;">
+        <table>
+            <tr><th>Name</th><td>Chinmayi B</td></tr>
+            <tr><th>Date of Birth</th><td>12/11/2005</td></tr>
+            <tr><th>Gender</th><td>Female</td></tr>
+            <tr><th>Religion</th><td>Hindu</td></tr>
+            <tr><th>Nationality</th><td>Indian</td></tr>
+            <tr><th>Blood Group</th><td>B+</td></tr>
+            <tr><th>Mother Tongue</th><td>Konkani</td></tr>
+            <tr><th>Languages Known</th><td>Konkani, English, Hindi</td></tr>
+            <tr><th>Contact Info</th><td>
+                <strong>Permanent Address:</strong> Ambatedka House, Sullia, DK, Karnataka<br>
+                <strong>Current Address:</strong> Bangalore<br>
+                <strong>Phone:</strong> 9482570226<br>
+                <strong>Email:</strong> chinmayibellippadi@gmail.com
+            </td></tr>
+            <tr><th>Hobbies & Interests</th><td>Dancing, Singing, Painting, Drawing, Networking, Coding</td></tr>
+        </table>
+    </div>
+    <button class="download-btn" onclick="downloadPDF()">Download as PDF</button>
+</div>
+<script>
+function downloadPDF() {
+    var element = document.getElementById('bio-data-content');
+    html2pdf().set({
+        margin: 0.5,
+        filename: 'biodata.pdf',
+        image: { type: 'jpeg', quality: 0.98 },
+        html2canvas: { scale: 2 },
+        jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' }
+    }).from(element).save();
+}
+</script>
 </div>
 
 </body>
