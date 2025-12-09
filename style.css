@@ -3,13 +3,15 @@
 }
 
 /* Card/Box styling for resume sections */
+/* Remove extra box styling from resume sections, keep only info table boxed */
 .resume-section {
-    background: #fafaff;
-    border: 2px solid #ffe0ec;
-    border-radius: 12px;
-    box-shadow: 0 2px 12px #ffb6b933;
-    padding: 18px 22px 10px 22px;
-    margin-bottom: 28px;
+    background: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+    margin-bottom: 0;
+}
 }
 body {
     margin: 0;
@@ -124,9 +126,17 @@ table {
     margin: 0 auto 24px auto;
     width: 95%;
 }
+/* Unified container for all pages */
 .container {
-    border-radius: 12px;
-    max-width: 600px;
+    border-radius: 18px;
+    max-width: 700px;
+    border: 2px solid #ffb6b9;
+    box-shadow: 0 4px 24px #ffb6b9;
+    background: #fff;
+    padding: 36px 32px 36px 32px;
+    margin: 40px auto 32px auto;
+    min-height: 0;
+    overflow: visible;
 }
 
 table {
