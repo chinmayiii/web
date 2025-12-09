@@ -1,3 +1,16 @@
+#resume-content > ul, #resume-content > h2 {
+    margin-left: 0;
+}
+
+/* Card/Box styling for resume sections */
+.resume-section {
+    background: #fafaff;
+    border: 2px solid #ffe0ec;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px #ffb6b933;
+    padding: 18px 22px 10px 22px;
+    margin-bottom: 28px;
+}
 body {
     margin: 0;
     font-family: Arial, sans-serif;
