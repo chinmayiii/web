@@ -297,21 +297,9 @@ nav ul li a.active {
     text-decoration: underline;
 }
 
-.container {
-    width: 70%;
-    background: white;
-    margin: 30px auto;
-    padding: 20px;
-    box-shadow: 0px 0px 10px gray;
-}
-
 table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
 table th, table td {
-    border: 1px solid #333;
+/* Remove duplicate/old container and table rules for unified layout */
     padding: 10px;
 }
 
