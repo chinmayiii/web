@@ -212,6 +212,7 @@ body {
     min-width: 0;
     background: #fff;
     box-shadow: 0 8px 32px 0 rgba(106,130,251,0.15), 0 1.5px 8px 0 #fc5c7d22;
+    border: 3px solid #a5b4fc;
     padding: 48px 32px;
     margin: 0 auto;
     min-height: 60vh;
