@@ -23,7 +23,7 @@ body {
     border: 2px solid #ffb6b9;
     box-shadow: 0px 8px 32px rgba(106,17,203,0.10);
     overflow: visible;
-    min-height: 700px;
+    min-height: 1200px;
 }
 
 table {
