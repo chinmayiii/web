@@ -171,13 +171,13 @@ table td {
 /* Profile Image Styling */
 .profile-img {
     display: block;
-    margin: 0 auto 24px auto;
-    box-shadow: 0 4px 24px #ffb6b9;
-    border: 5px solid #ffe0ec;
+    margin: 0 auto 16px auto;
+    box-shadow: 0 2px 8px #ffb6b9;
+    border: 3px solid #ffe0ec;
     background: #fff;
     object-fit: cover;
-    width: 160px;
-    height: 160px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     transition: box-shadow 0.2s;
 }
