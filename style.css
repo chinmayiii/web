@@ -146,6 +146,24 @@ table {
     box-sizing: border-box;
 }
 
+/* Center all direct children of .container */
+.container > * {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/* Center table content */
+table, th, td {
+    text-align: center !important;
+    vertical-align: middle !important;
+}
+
+/* Center section headings */
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
+
 table {
         background: linear-gradient(90deg, #f3f3f3 60%, #ffe0ec 100%);
         border-radius: 12px;
